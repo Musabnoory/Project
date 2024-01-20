@@ -1,0 +1,122 @@
+:root{
+    --main-color:#ec4032;
+    --gray-color:#e2e2e2;
+}
+body{
+    font-family:system-ui;
+}
+.navbar{
+    align-items: center;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+.navbar .nav-item{
+    margin-left: 10px;
+    margin-right: 10px;
+}
+.navbar .nav-item .nav-link{
+    font-size: 14px;
+
+}
+.navbar .nav-item .nav-link:hover{
+    color:var(--main-color);
+}
+/*section*/
+.section .image-container img{
+    width:100%;
+}
+.section .side{
+    background-color: #171717;
+    padding: 24px;
+    color: #eee;
+}
+.section .side .h2 h2{
+    font-size: 45px;
+    color: #f6a736;
+}
+.section .side .part{
+    padding-bottom: 10px;
+    margin-top: 18px;
+}
+.section .side .part h3{
+    font-size: 23px;
+}
+.section .side .part:not(.last){
+    border-bottom: 1px solid #333;
+}
+.section .side .part p{
+    color: #6f6f6f;
+    font-size: 14px;
+}
+.section .heding .h1 h1{
+    font-size: 56px;
+    font-weight: bolder;
+}
+.section .heding .pra{
+    flex-direction: column;
+    display: flex;
+    justify-content: space-between;
+}
+.section .heding .pra p{
+    line-height: 1.5;
+    padding-top: 20px;
+}
+.section .heding .btn{
+    letter-spacing: 5.5px;
+    width: 50%;
+    border-radius: 0px;
+    background-color: #333;
+    border: none;
+    color: #eee;
+    padding: 10px;
+}
+.sec2 .content{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+.sec2 .image img{
+    width: 100%;
+}
+.sec2 .content .detail{
+    margin-left: 20px;
+}
+.sec2 .content .detail h3{
+    color: #c9c9c9;
+}
+.sec2 .content .detail h4{
+    font-size: 20px;
+}
+.sec2 .content .detail p{
+    font-size: 12px;
+    color:#6f6f6f;
+}
+@media (max-width:1023px){
+    .navbar-collapse{
+        margin-top:15px;
+    }
+    .navbar-collapse img{
+        position: relative;
+        right: -300px;
+    }
+    .heding{
+        flex-direction: column;
+        margin-bottom: 40px;
+    }
+    .section .heding .pra p{
+        line-height: 1.5;
+        padding-top: 20px;
+    }
+    .section .heding .btn{
+        letter-spacing: 5.5px;
+        width: 50%;
+        border-radius: 0px;
+        background-color: #f04436;
+        border: none;
+        color: #eee;
+        padding: 10px;
+    }
+    .sec2 .content{
+        margin-bottom: 40px;
+    }
+}
